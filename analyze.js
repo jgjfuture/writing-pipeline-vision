@@ -7,6 +7,6 @@ export async function alalyzeImage(imageURL) {
     if (!annotationsBlocks) {
         return "";
     }
-    reasoningText = annotationsBlocks[0].description;
+    const reasoningText = annotationsBlocks[0].description;
     return reasoningText;
 }
