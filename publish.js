@@ -9,9 +9,9 @@ export async function publishMessage(topicName, data) {
   return messageId;
 }
 
-export function makePublishData(notionPageId, imageURL) {
+export function makePublishData(notionPageId, reasoningText) {
     return JSON.stringify({
         notionPageId,
-        imageURL
+        reasoningText
     });
 }
